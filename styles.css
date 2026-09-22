@@ -32,6 +32,18 @@ body {
     background-color: var(--neutral-color-grey-100);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -45,15 +57,16 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 4rem 2rem;
+    padding: clamp(2rem, 5vw, 4rem) 2rem;
 }
+
 
 .card {
     border-radius: 10px;
     overflow: hidden;
     padding: 2rem;
     box-shadow: 50px 50px 30px color-mix(in srgb, var(--neutral-color-dark-blue) 20%,transparent);
-    max-width: 450px;
+    max-width: 28.125rem;
     margin: 0 auto;
     
 }
@@ -120,7 +133,7 @@ p span {
     font-size: 16px;
 }
 
-@media (min-width:1000px) {
+@media (min-width:62.5rem) {
     main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
