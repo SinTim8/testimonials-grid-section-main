@@ -45,7 +45,7 @@ span {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: clamp(2rem, 2vw, 2.5rem);
     padding: clamp(2rem, 5vw, 4rem) 2rem;
 }
 
@@ -104,7 +104,7 @@ span {
 
 p span {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    padding: 1rem 0;
+    padding: clamp(1rem, 2vw, 1.5rem) 0;
     font-weight: 600;
 }
 
