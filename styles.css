@@ -12,7 +12,7 @@
     --neutral-color-dark-blue: hsl(219, 29%, 14%);
     --neutral-color-black: hsl(0, 0%, 7%);
         
-    --font-size: 13px;
+    --font-size: 0.8rem;
     --font-family: "Barlow Semi Condensed", sans-serif;
     
 }
@@ -56,14 +56,14 @@ main {
 .card {
     border-radius: 10px;
     overflow: hidden;
-    padding: 2rem;
+    padding: clamp(1.5rem, 3vw, 2rem);
     box-shadow: 50px 50px 30px color-mix(in srgb, var(--neutral-color-dark-blue) 20%,transparent);
     max-width: 28.125rem;
     margin: 0 auto;
     
 }
 .verified {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--neutral-color-grey-200);
 }
 
@@ -106,7 +106,7 @@ main {
 }
 
 p span {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600;
 }
@@ -118,11 +118,11 @@ p span {
     
 }
 .header img {
-    height: 48px;
+    height: 3rem;
 }
 
 .name {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 @media (min-width:62.5rem) {
